@@ -1,5 +1,7 @@
+// Removed .h from iostream
 #include <iostream>
 
+// Added using namespace std;
 using namespace std;
 
 void func1( int a[] , int size ) {

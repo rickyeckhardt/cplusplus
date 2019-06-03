@@ -1,5 +1,7 @@
+// Removed .h after <iostream>
 #include <iostream>
 
+// Added "using namespace std;"
 using namespace std;
 
 void clear() {
