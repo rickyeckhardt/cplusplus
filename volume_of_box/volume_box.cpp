@@ -2,11 +2,9 @@
 
 	Machine Problem: MP0B ( Sample Program ) 
 
-	Summer 2004
-
-	CREATED BY: RICKY ECKHARDT
+	Created By: Ricky Eckhardt
   
-	Calculate the area and volume of a box given height, length, and width
+	Description: Calculate the area and volume of a box given height, length, and width
 
 ******************************************************************************/
 
@@ -18,39 +16,36 @@ using namespace std;
 
 
 	//Start function main
-int main(void)
-	{
-
+int main(void) {
 	//declarations
-	
 	float height, length, width, area, volume;			
 
 	//read height
-	cout << "Enter height of a box in inches" << endl	;
-	cin	 >> height										;										
+	cout << "Enter height of a box in inches" << endl;
+	cin	 >> height;										
 	
 	//read width
-	cout << "Enter width of a box in inches" << endl	;
-	cin	 >> width										;
+	cout << "Enter width of a box in inches" << endl;
+	cin	 >> width;
 
 	//read length
-	cout << "Enter length of a box in inches" << endl   ;
-	cin  >> length										;
+	cout << "Enter length of a box in inches" << endl;
+	cin  >> length;
 
 	//compute area
-	area = length * width								;
+	area = length * width;
 
 	//compute volume
-	volume = area * height								;
+	volume = area * height;
 
 	//display height, width, length, area, and volume
-	cout << "Height of box is:" << height << endl		;
-	cout << "\n Width of box is:"	<< width << endl	;
-	cout << "\n Length of box is:" << length << endl	;
-	cout << "\n Area of box is:" << area << endl		;
-	cout << "\n Volume of box is:" << volume << endl	;
+	cout << "Height of box is:" << height << endl;
+	cout << "\n Width of box is:"	<< width << endl;
+	cout << "\n Length of box is:" << length << endl;
+	cout << "\n Area of box is:" << area << endl;
+	cout << "\n Volume of box is:" << volume << endl;
 
-	return 0											;
-	}
+	return 0;
+}
 	
-	//end of function main
+//end of function main
