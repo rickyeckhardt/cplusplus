@@ -1,0 +1,35 @@
+string input;
+                        cout << "\n Enter Student ID, that you want modify its informatin : ";
+                        cin >> input;
+ 
+                        pos = file_str.find(input);
+ 
+                        if (pos == string::npos)
+                        {
+                              cout << "\n Your specified student doesn't exist in the list" << endl;
+                              system ( "pause" );
+                              break;
+                        }
+ 
+                        cout << "\nEnter new informations for this student : ";
+ 
+                        cout << "\n\n ID : ";
+                        cin >> input;
+ 
+                        del_num = file_str.find('>', pos+1)-pos; // ID : first character of ID to first '>'
+                       
+                        file_str.replace (pos, del_num, input); // replace the current ID with the new one
+ 
+                       
+                        cout << "\n Name (Only one word) : ";
+                        cin >> input;
+                       
+                        pos = file_str.find('>', pos+1) + 1; // first character of Name
+                        del_num = file_str.find('>', pos+1)-pos; // Name : first character after first '>' to second '>'
+ 
+                        file_str.replace (pos, del_num, input); // replace the current Name with the new one
+ 
+                        cout << "\n Record was modified." << endl;
+                        system ( "pause" );
+ 
+                        break;
